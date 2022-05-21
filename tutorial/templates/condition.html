@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!--start content-->
+<div id="content">
+    <!--post item-->
+    <div class="item">
+        <h1>Pyhton Condition :</h1>
+        <p>In programming , we can use logical condition to run codes.
+            It help the code to trigger for the certain moment.
+            These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+
+            <img src="{% static 'images/condition.png' %}">
+       
+
+    <br>
+    <br>
+    <h1>If Statement :</h1>
+    <p>code will only run if the condition is True.</p>
+        <img src="{% static 'images/if_.png' %}">
+
+    <p>Output:</p>
+        <img src="{% static 'images/if_output.png' %}">
+
+            
+    <h1>If Statement Structure :</h1>
+        <img src="{% static 'images/struc.png' %}">
+
+
+
+
+
+
+
+    </div>
+    <!--end of another post item-->			
+</div>
+<!--end of content-->
+
+{% endblock %}

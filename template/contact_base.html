@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Tut-py</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" lang="en" content="open source x/html and css templates">
+<meta name="author" content="mlp design">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<link rel = "icon" href = "{% static 'images/logo.jpeg' %}" type = "image/x-icon">
+</head>
+<body>
+
+
+<!--start wrapper-->
+<div id="wrapper">
+
+<!--start body-->
+<div id="body">
+
+<!--start header-->
+<div id="banner">
+
+<h1 style="color:black;"><img src="{% static 'images/logo.jpeg' %}" style="width:128px;height:128px;">Py<em>tut</em></h1>
+<br>
+<!-- menu -->
+<label for="show-menu" class="responsive">&#9776;</label>
+<input type="checkbox" id="show-menu" role="button">
+<ul id="topnav">
+<li><a href="{% url 'home' %}">Home</a></li>
+<li><a href="{% url 'tutorial' %}">Tutorial</a></li>
+<li><a href="#">Exerecise</a></li>
+<li><a href="#">Project</a></li>
+<li><a href="{% url 'contact' %}">Contact</a></li>
+</ul>
+<!-- end menu -->
+</div>
+<!--end of header-->
+	<!--start sidebar-->
+	<div id="sidebar">
+	
+		<h2>Basics</h2>
+		<ul>
+			<li><a href="{% url 'tutorial' %}">Intro</a></li>
+			<li><a href="{% url 'variable' %}">Variable</a></li>
+   			<li><a href="{% url 'data_type' %}">Data Types</a></li>
+   			<li><a href="{% url 'loops' %}">Loops</a></li>
+   			<li><a href="{% url 'condition' %}">Condition</a></li>
+			<li><a href="#">2017-Feb</a></li>
+			<li><a href="#">2017-Jan</a></li>
+		</ul>
+		<h2>Intermediate</h2>
+		<ul>
+			<li><a href="#">2016-Dec</a></li>
+			<li><a href="#">2016-Nov</a></li>
+			<li><a href="#">2016-Oct</a></li>
+			<li><a href="#">2016-Sep</a></li>
+			<li><a href="{% url 'tutorial' %}">Intro</a></li>
+			<li><a href="{% url 'variable' %}">Variable</a></li>
+   			<li><a href="#">Medical Information</a></li>
+   			<li><a href="#">Girls</a></li>
+   			<li><a href="#">Alien</a></li>
+			<li><a href="#">2017-Feb</a></li>
+			<li><a href="#">2017-Jan</a></li>
+			<li><a href="#">2016-Dec</a></li>
+			<li><a href="#">2016-Nov</a></li>
+			<li><a href="#">2016-Oct</a></li>
+			<li><a href="{% url 'tutorial' %}">Intro</a></li>
+			<li><a href="{% url 'variable' %}">Variable</a></li>
+   			<li><a href="#">Medical Information</a></li>
+   			<li><a href="#">Girls</a></li>
+   			<li><a href="#">Alien</a></li>
+			<li><a href="#">2017-Feb</a></li>
+			<li><a href="#">2017-Jan</a></li>
+			<li><a href="#">2016-Dec</a></li>
+			<li><a href="#">2016-Nov</a></li>
+			<li><a href="#">2016-Oct</a></li>
+			<li><a href="#">2016-Sep</a></li>
+			<li><a href="{% url 'tutorial' %}">Intro</a></li>
+			<li><a href="{% url 'variable' %}">Variable</a></li>
+   			<li><a href="#">Medical Information</a></li>
+   			<li><a href="#">Girls</a></li>
+   			<li><a href="#">Alien</a></li>
+			<li><a href="#">2017-Feb</a></li>
+			<li><a href="#">2017-Jan</a></li>
+			<li><a href="#">2016-Dec</a></li>
+			<li><a href="#">2016-Nov</a></li>
+			<li><a href="#">2016-Oct</a></li>
+
+		</ul>
+		
+	</div>
+	<div class="clear"></div>
+	<!--end of sidebar-->
+
+	<!--start containter-->
+	<div id="container">
+	
+
+		
+{% block content %}
+
+{% endblock %}
+
+	</div>
+	<!--end of container-->
+
+</div>
+<!--end of body-->
+
+	<!--start footer-->
+	<div id="footer">
+		<span class="left">2022 &copy; Copyright <a href="{% url 'privacy' %}">Pytut</a>. All rights reserved.</span>
+		<span class="right"><a href="{% url 'contact' %}">Contact</a> | <a  href="{% url 'privacy' %}">privacy</a></span>
+		<p class="show-footer">2017 &copy; Copyright <a href="#">Your Name</a>. All rights reserved.<br /><a href="#">Contact</a> | <a href="#">Site Map</a></p>
+	</div>
+	<!--end of footer-->	
+
+</div>
+<!--end of wrapper-->
+
+	<!--start credits-->
+	<!--//Under CC-NC 3.0, this portion must be left intact and must not be hidden.//-->
+
+	<!--end of credits-->
+</body>
+
+</html>

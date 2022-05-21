@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!--start content-->
+<div id="content">
+    <!--post item-->
+    <div class="item">
+        <h1>Variables can store data of different types, and different types can do different things.</h1>
+        
+        <h1> Basic Data Types in Python :</h1>
+        <ul>
+            <li>
+                    <a href ="#">Srings (str) </a>
+                    <blockquote>name ="John Wick" </blockquote>
+                    <blockquote>color ="red"</blockquote>
+            </li>
+            <li>
+                <a href ="#">Integers (int) </a>
+                    <blockquote>age = 21 </blockquote>
+                    <blockquote>_count = 120</blockquote>
+                
+            </li>
+            <li>
+                <a href ="#">Float (float) </a>
+                    <blockquote>pi = 3.14 </blockquote>
+                    <blockquote>e = 2.0</blockquote>
+        
+            </li>
+            <li>
+                <a href ="#">Cmplex (complex) </a>
+                <blockquote>x = 3j </blockquote>
+                <blockquote>y = 7j</blockquote>
+    
+            </li>
+            <li>
+                <a href ="#">List (list) </a>
+                <blockquote>name_list = ["bob" , "jack" ,"Kumar"] </blockquote>
+                <blockquote>count = [1,2,3,4,5,6,7,8,,9]</blockquote>    
+            </li>
+            <li>
+                <a href ="#">Tuple (tuple) </a>
+                <blockquote>animals = ("dog" ,"cat" , "pikachu")</blockquote>
+                <blockquote>Gf = ()</blockquote>
+    
+            </li>
+            <li>
+                <a href ="#"> range </a>
+                <blockquote>count = range(10) </blockquote>
+    
+            </li>
+            <li>
+                <a href ="#">Dictionary (dict) </a>
+                <blockquote>data = {"apple" :2 , "orange" :22} </blockquote>    
+            </li>
+            <li>
+                <a href ="#">Boolean (bool) </a>
+                <blockquote>Yes = True </blockquote>    
+                <blockquote>No = False</blockquote>
+            </li>
+            <li>
+                <a href ="#"></a>Set (set)</a>
+                <blockquote> x = set(("apple", "banana", "cherry")) </blockquote>    
+            </li>
+            <img src ="{% static 'images/data_type.png'%}">
+            
+        </ul>
+
+        
+
+    </div>
+    <!--end of another post item-->			
+</div>
+<!--end of content-->
+
+{% endblock %}

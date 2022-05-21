@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!--start content-->
+<div id="content">
+    <!--post item-->
+    <div class="item">
+        <h1>Python Loops :</h1>
+        <ul>
+            <li>for loop</li>
+            <li>while loop</li>
+        </ul>
+    
+        <blockquote>
+            <p>NOTE : In computer programming, 
+            a loop is a sequence of instructions that is continually execute until a certain condition is reached. </p>
+    
+        </blockquote>
+
+        <h2>While Loops :</h2>
+        <img src="{% static 'images/loop.png' %}">
+        <h1>Output :</h1>
+        <img src="{% static 'images/loop_output.png' %}">
+
+        <h2>For Loops :</h2>
+        <p>A for loop is used for iterating over a sequence like. </p>
+        <ul>
+            <li>list</li>
+            <li>tuple</li>
+            <li>dictionary</li>
+            <li>set</li>
+            <li>string</li>
+        </ul>
+     <br>
+        <img src="{% static 'images/for_loop.png' %}">
+        <h1>Output :</h1>
+        <img src="{% static 'images/for_output.png' %}">
+        
+
+
+
+
+    </div>
+    <!--end of another post item-->			
+</div>
+<!--end of content-->
+
+{% endblock %}

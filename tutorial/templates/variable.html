@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!--start content-->
+<div id="content">
+    <!--post item-->
+    <div class="item">
+        <h1>Variables in Pyhton :</h1>
+        <P>
+            In programming variables are considers as a container to hold value.
+
+        </P>
+        <ul>
+            Rules for python variable names
+            <li>
+                A variable name must start with a letter or the underscore character.
+            </li>
+            <li>
+                A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+            </li>
+        </ul>
+
+        <blockquote>NOTE :Python Variables are case sensitive </blockquote>
+
+        <h1>Assigning Variables</h1>
+        <pre>
+            variable_name = value
+        </pre>
+
+        <h1>Example :</h2>
+        <img src ="{% static 'images/variable.png'%}">
+
+        <h1>We can the get values store in a variable by it's variable_name :</h2>
+        <img src ="{% static 'images/print.png'%}">
+
+        <h1>Output :</h2>
+        <img src ="{% static 'images/variable_print_output.png'%}">
+
+        
+
+
+
+
+
+    </div>
+    <!--end of another post item-->			
+</div>
+<!--end of content-->
+
+{% endblock %}

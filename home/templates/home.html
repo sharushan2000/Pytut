@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--start containter-->
+<div id="container">
+	
+
+		
+    <!--start content-->
+    <div id="content">
+        <!--post item-->
+        <div class="item">
+            <h1>Learn Python ,In Your Comfort. </h1>
+            <p>Python is a programming language that lets you work more quickly and integrate your systems more effectively.</p>
+            <p>To download python visit <a href="https://www.python.org/">www.python.org</a></p>
+            
+            
+            <blockquote><p>"Python has been an important part of Google since the beginning, and remains so as the system grows and evolves. Today dozens of Google engineers use Python, and we're looking for more people with skills in this language." said Peter Norvig, director of search quality at Google, Inc
+</p></blockquote>
+<blockquote><p>"Python is fast enough for our site and allows us to produce maintainable features in record times, with a minimum of developers," said Cuong Do, Software Architect, YouTube.com.
+</p></blockquote>
+            
+<h1>Start your python programming journey with Pytut.</h1>
+<a href="{% url 'tutorial' %}"></a><img src="{% static 'images/python.jpeg' %}" ></a>
+<form action="{% url 'tutorial' %}">
+    <input type="submit" value="Start Tutorial" />
+</form>
+
+
+
+        <!--end of another post item-->			
+    </div>
+    <!--end of content-->
+
+</div>
+<!--end of container-->
+
+{% endblock %}

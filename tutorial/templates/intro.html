@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!--start content-->
+<div id="content">
+    <!--post item-->
+    <div class="item">
+        <h1>Some of Python's notable features:</h1>
+        <ul>
+            <li>Uses an elegant syntax, making the programs you write easier to read.</li>
+            <li>Pyhton is an easy-to-use language that makes it simple to get your program working. This makes Python ideal for prototype development and other ad-hoc programming tasks, without compromising maintainability.</li>
+            <li>Pyhto is an easy-to-use language that makes it simple to get your program working. This makes Python ideal for prototype development and other ad-hoc programming tasks, without compromising maintainability.</li>
+            <li>Python's interactive mode makes it easy to test short snippets of code. There's also a bundled development environment called IDLE.</li>
+            <li>Is easily extended by adding new modules implemented in a compiled language such as C or C++.</li>
+            <li>Can also be embedded into an application to provide a programmable interface.</li>
+            <li>Runs anywhere, including Mac OS X, Windows, Linux, and Unix, with unofficial builds also available for Android and iOS.</li>
+            <li>It's free</li>
+            
+        </ul>
+        <h1>Some programming-language features of Python are:</h1>
+        <ul>
+            <li>A variety of basic data types are available: numbers (floating point, complex, and unlimited-length long integers), strings (both ASCII and Unicode), lists, and dictionaries.</li>
+            <li>Python supports object-oriented programming with classes and multiple inheritances.</li>          
+            <li>Code can be grouped into modules and packages.</li> 
+            <li>The language supports raising and catching exceptions, resulting in cleaner error handling.</li>
+            <li>Data types are strongly and dynamically typed. Mixing incompatible types (e.g. attempting to add a string and a number) causes an exception to be raised, so errors are caught sooner.</li>
+            <li>Python contains advanced programming features such as generators and list comprehensions.</li>
+            <li>Python's automatic memory management frees you from having to manually allocate and free memory in your code.</li>
+
+            
+        </ul>
+        <h2>
+            Let's Write Your First Python Code :
+        </h2>
+        <pre>
+            print("Hello World!")
+        </pre>
+        
+        <img src="{% static 'images/Hello_world_code.png' %}">
+        <br>
+        <h1>sample output</h1>
+        <img src="{% static 'images/Hello_World_output.png' %}">
+
+    </div>
+    <!--end of another post item-->			
+</div>
+<!--end of content-->
+
+{% endblock %}
